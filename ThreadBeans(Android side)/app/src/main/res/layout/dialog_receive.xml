@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    >
+
+    <TextView
+        android:id="@+id/labelView"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File: "
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/labelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="filename"
+        android:textSize="20sp"
+        android:id="@+id/nameView"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@id/nameView"
+        android:progress="0"
+        android:layout_margin="5dp"
+        android:progressDrawable="@drawable/green_progress"
+        />
+
+    <Button
+        android:background="@drawable/btn_cancel_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancel_Button"
+        android:layout_below="@id/progressBar"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

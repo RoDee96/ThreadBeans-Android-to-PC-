@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ThreadBeans"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/insText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:text="\nTurn off Mobile data\n1.\tConnect your PC to ThreadBeans network.\n\n"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/insText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insText1"
+        android:text="2.\tOpen URL: &quot;192.168.43.1:8080/&quot; in browser.\n\n"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/insText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insText2"
+        android:text="3.\tDownload and run ThreadBeans Application."
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ThreadBeans"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.threadbeans2.animation.Dot
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/textView"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:tag="trueDot" />
+
+    <Button
+        android:id="@+id/pcButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dot"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_pc_selecter"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Connect to PC"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/androidButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pcButton"
+        android:layout_centerInParent="true"
+
+        android:background="@drawable/btn_android_selector"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Connect to Android"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
